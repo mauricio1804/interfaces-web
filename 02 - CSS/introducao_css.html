@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Introdução ao CSS</title>
+    <style>
+        p{
+            background-color: blue;
+        }
+
+        #paragrafo_especial{
+            background-color: aqua;
+            font-size: 24pt;
+            color: white;
+        }
+        .paragrafo{
+            font-size: 20pt;
+            color: greenyellow;
+            font-weight: bold;
+
+        }
+    </style>
+</head>
+<body>
+    <!--style in-line tem precedencia ao style no head-->
+    <p style="color:red; font-size: 30pt;">TEXTO</p>
+    <p>Parágrafo</p>
+
+    <hr>
+
+    <p class="paragrafo">Meu primeiro Parágrafo</p>
+    <p>Meu segundo Parágrafo</p>
+
+    <!--O id se sobre poe a tag p, a class-->
+    <p id="paragrafo_especial">Meu terceiro Parágrafo</p>
+    <p>Meu quarto Parágrafo</p>
+    
+</body>
+</html>
