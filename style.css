@@ -1,0 +1,26 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #F2E3D5;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.titulos{
+    text-transform: uppercase;
+}
+
+
+.titulo_nome{
+    text-align: center;
+}
+
+.informacoes_gerais{
+    text-align: start;
+}
+
+.conteudo{
+    text-align: justify;
+}

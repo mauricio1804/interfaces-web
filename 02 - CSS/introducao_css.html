@@ -4,20 +4,27 @@
     <meta charset="UTF-8">
     <title>Introdução ao CSS</title>
     <style>
-        p{
-            background-color: blue;
-        }
 
         #paragrafo_especial{
-            background-color: aqua;
             font-size: 24pt;
-            color: white;
+            color: black;
         }
         .paragrafo{
             font-size: 20pt;
             color: greenyellow;
             font-weight: bold;
 
+        }
+        #paragrafo_test{
+            color: brown;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 26pt;
+            font-style: italic;
+            font-weight: 1000;
+            text-align: start;
+            text-decoration: line-through;
+            text-indent: 100px;
+            text-transform: uppercase;
         }
     </style>
 </head>
@@ -29,7 +36,7 @@
     <hr>
 
     <p class="paragrafo">Meu primeiro Parágrafo</p>
-    <p>Meu segundo Parágrafo</p>
+    <p id="paragrafo_test">Meu segundo Parágrafo</p>
 
     <!--O id se sobre poe a tag p, a class-->
     <p id="paragrafo_especial">Meu terceiro Parágrafo</p>
