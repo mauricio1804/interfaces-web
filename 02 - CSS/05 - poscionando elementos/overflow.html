@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            padding: 16px;
+            width: 300px;
+            height: 300px;
+            margin-bottom: 16px;
+            background-color: brown;
+        }
+        .item{
+            background-color: aqua;
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+        .fit-content .item{
+            width: fit-content;
+        }
+        .min-content .item{
+            width: min-content;
+        }
+        .max-content .item{
+            width: max-content;
+        }
+        .overflow-hidden{
+            overflow: hidden;
+        }
+        .overflow-scroll{
+            overflow: scroll;
+        }
+        .overflow-auto{
+            overflow: auto;
+        }
+        .overflow-visible{
+            overflow: visible;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container fit-content overflow-auto">
+        <div class="item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum cumque explicabo officia ipsum temporibus maiores animi cum. Deleniti, fuga similique! Facilis, quasi vitae ducimus consequatur sed similique natus voluptatum aut?
+        </div>
+        <div class="item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, dignissimos?
+        </div>
+        <div class="item">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. At delectus qui, sint optio pariatur incidunt saepe eveniet iure dolorem esse.
+        </div>
+        <div class="item">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum aspernatur aliquid, consequatur libero asperiores incidunt soluta molestias totam, explicabo dolorum ab. Est similique nostrum, aliquid dicta velit explicabo et molestias nesciunt inventore, esse, quisquam neque ipsum atque dolore quam fugiat aperiam itaque alias fuga cumque? Maxime quidem deserunt perspiciatis culpa?
+        </div>
+    </div>
+
+    <div class="container min-content overflow-visible">
+        <div class="item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum cumque explicabo officia ipsum temporibus maiores animi cum. Deleniti, fuga similique! Facilis, quasi vitae ducimus consequatur sed similique natus voluptatum aut?
+        </div>
+        <div class="item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, dignissimos?
+        </div>
+        <div class="item">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. At delectus qui, sint optio pariatur incidunt saepe eveniet iure dolorem esse.
+        </div>
+        <div class="item">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum aspernatur aliquid, consequatur libero asperiores incidunt soluta molestias totam, explicabo dolorum ab. Est similique nostrum, aliquid dicta velit explicabo et molestias nesciunt inventore, esse, quisquam neque ipsum atque dolore quam fugiat aperiam itaque alias fuga cumque? Maxime qu
+        </div>
+    </div>
+
+    <div class="container max-content overflow-hidden">
+        <div class="item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum cumque explicabo officia ipsum temporibus maiores animi cum. Deleniti, fuga similique! Facilis, quasi vitae ducimus consequatur sed similique natus voluptatum aut?
+        </div>
+        <div class="item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, dignissimos?
+        </div>
+        <div class="item">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. At delectus qui, sint optio pariatur incidunt saepe eveniet iure dolorem esse.
+        </div>
+        <div class="item">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum aspernatur aliquid, consequatur libero asperiores incidunt soluta molestias totam, explicabo dolorum ab. Est similique nostrum, aliquid dicta velit explicabo et molestias nesciunt inventore, esse, quisquam neque ipsum atque dolore quam fugiat aperiam itaque alias fuga cumque? Maxime qu
+    </div>
+    
+</body>
+</html>
