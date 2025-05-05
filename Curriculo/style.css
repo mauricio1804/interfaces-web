@@ -1,0 +1,110 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(https://images.pexels.com/photos/807598/pexels-photo-807598.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    font-size: 62.5%;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+a:hover{
+    color: blue;
+}
+
+.titulos{
+    text-transform: uppercase;
+    padding: 1em;
+}
+
+
+.titulo_nome{
+    text-align: center;
+    font-size: 3em;
+    padding-bottom: 0.5em;
+    margin: 0;
+    color: white;
+}
+
+.apresentacao{
+    padding: 15px;
+}
+
+/* footer */
+.footer{
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+}
+.informacoes_gerais{
+    text-align: end;
+    color: white;
+    display: flex;
+}
+
+#telefone{
+    padding-left: 50px;
+}
+
+#email{
+    padding-left: 10px;
+}
+
+.conteudo li{
+    text-align: justify;
+    list-style-type: none;
+    border: 2px solid black;
+}
+
+.conteudo{
+    font-size: 1.5em;
+}
+
+.objetivo, .formacao, .exp, .competencia{
+    height: auto;
+    margin: 30px;
+    background-color: rgb(255, 255, 255, 0.3);
+    
+}
+
+.formacao li, .exp li, .competencia li{
+    border: transparent;
+    list-style-type: square;
+}
+
+.objetivo, .formacao, .exp, .competencia{
+    padding: 10px;
+}
+
+/* header */
+.header {
+    display: flex;
+    background-color: #05080a;
+    margin: 16px;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .header__nav ul {
+    display: flex;
+    list-style-type: none;
+    font-size: 18px;
+    gap: 16px;
+  }
+  .header__nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 14px;
+    border-radius: 6px;
+  }
+  .header__nav a:hover {
+    text-decoration: underline;
+  }
