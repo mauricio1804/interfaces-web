@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+      input {
+        display: block;
+        margin-bottom: 10px;
+      }
+      .action input {
+        display: inline-block;
+      }
+      .comorbidade,
+      .interesse {
+        display: inline-block;
+      }
+      textarea{
+        resize: none;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <fieldset>
+        <label for="filhos">Quantidade</label>
+        <input type="number" id="filhos" min="0" max="10000000" />
+        <input type="date" min="2025-02-02" max="2025-02-12" />
+        <input type="time" min="08:00" max="17:00" />
+      </fieldset>
+      <fieldset class="comorbidade">
+        <legend>Comorbidade</legend>
+        <input type="radio" value="sim" name="comorbidade" />sim
+        <input type="radio" value="Não" name="comorbidade" />Não
+      </fieldset>
+      <fieldset class="interesse">
+        <legend>Interesse</legend>
+        <label for=""
+          ><input type="checkbox" name="interesse" value="html" />HTML</label
+        >
+        <label for=""
+          ><input type="checkbox" name="interesse" value="html" />camelo</label
+        >
+        <label for=""
+          ><input type="checkbox" name="interesse" value="html" />tatu</label
+        >
+      </fieldset>
+
+      <fieldset>
+        <legend>Selecione</legend>
+        <select name="linguagem" id="selectLang">
+            <optgroup label="front">
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="js">JavaScript</option>
+            </optgroup>
+            <optgroup label="black">
+                <option value="laravel">Laravel</option>
+                <option value="express">Express</option>
+            </optgroup>
+        </select>
+      </fieldset>
+
+
+      <fieldset>
+        <legend>Linguagem</legend>
+        <input type="text" list="langList">
+        <datalist id="langList">
+                <option value="html"></option>
+                <option value="css"></option>
+                <option value="js"></option>
+                <option value="laravel"></option>
+                <option value="express"></option>
+        </datalist>
+      </fieldset>
+
+      <fieldset>
+        <legend>Deixe aqui a sua mensagem</legend>
+        <textarea name="msg" cols="100" rows="10"></textarea>
+      </fieldset>
+
+      <fieldset>
+        <textarea name="msg" cols="100" rows="10" disabled>
+CONTRATO DE ULTILIZAÇÃO
+    1.CLAUSULA DO tatu
+    2.Calausula do Tamandua
+            2.2clausula do Peba
+        </textarea>
+        <label for=""><input type="checkbox">Li e não concordo</label>
+      </fieldset>
+
+      <input type="file">
+      <input type="search" placeholder="Busca aqui seu macaco">
+      <input type="hidden" value="valor_escondido">
+      <input type="button" value="ok">
+      <button type="submit">Ok</button>
+      <input type="range" min="0" max="10">
+      <input type="color">
+      
+      <input type="submit" value="Enviar" />
+    </form>
+  </body>
+</html>

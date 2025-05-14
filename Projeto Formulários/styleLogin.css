@@ -1,0 +1,110 @@
+html {
+  background: linear-gradient(to bottom right, #007bff, #6bbeff);
+  font-family: Helvetica, Arial, sans-serif;
+  color: #333;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+form {
+  background-color: #fff;
+  width: 30%;
+  padding: 2em;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+legend {
+  font-size: 1.5em;
+  color: #3a3a3a;
+  margin-bottom: 1.5em;
+}
+
+label {
+  font-size: 0.75em;
+  text-transform: uppercase;
+  color: #555;
+  margin-bottom: 0.3em;
+  display: block;
+}
+
+input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #999;
+  padding: 0.5em 0;
+  margin-bottom: 1.5em;
+  font-size: 1em;
+  outline: none;
+  color: #000;
+  background: transparent;
+}
+
+input::placeholder {
+  color: #ccc;
+}
+
+.btn {
+  background-color: #2563eb;
+  color: #fff;
+  border: none;
+  padding: 0.7em 1.2em;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 0.9em;
+  text-transform: uppercase;
+}
+
+.linkCadastro {
+  background-color: transparent;
+  color: #2563eb;
+  border: none;
+  padding: 0.7em 1.2em;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.botoes {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.botoes .linkCadastro {
+  flex-grow: 1;
+}
+
+.login-link {
+  font-size: 0.75em;
+}
+
+.login-link a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
+
+input:invalid:focus {
+  border-bottom: 2px solid #ff000d;
+}
+input:valid:focus{
+  border-bottom: 2px solid green;
+}
