@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Soma dos números ímpares</title>
+</head>
+<body>
+    <h1>Soma dos números ímpares</h1>
+    <button onclick="calcularSomaImpares()">Calcular Soma dos Ímpares</button>
+    <div id="resultado"></div>
+
+    <script>
+        function calcularSomaImpares() {
+            const numeros = [
+                12, 5, 8, 19, 3, 7, 20, 14, 9, 11,
+                2, 17, 6, 13, 1, 15, 4, 10, 18, 16
+            ];
+            
+            let soma = 0;
+            for (let num of numeros) {
+                if (num % 2 !== 0) {
+                    soma += num;
+                }
+            }
+            
+            document.getElementById('resultado').innerHTML = `
+                <p>Array: [${numeros.join(', ')}]</p>
+                <p>Soma dos números ímpares: ${soma}</p>
+            `;
+        }
+    </script>
+</body>
+</html>

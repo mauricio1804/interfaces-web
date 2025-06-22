@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplo1</title>
+</head>
+<style>
+  a[href="#"]{
+    color: red;
+  }
+  a[href="#"]:not(.link-on){
+    opacity: .2;
+  }
+  a[href^="http"]{
+    color: aqua;
+  }
+  a[href$=".pdf"]{
+    color: orange;
+  }
+  a[target="_blank"]{
+    text-decoration: none;
+  }
+</style>
+<body>
+    <ul>
+        <li><a href="#">link falso</a></li>
+        <li><a href="#" class="link-on">link falso</a></li>
+        <li><a href="https://www3.unicentro.br/" target="_blank">link externo</a></li>
+        <li><a href="../../../../Cap 13 QuestõesRespondidas MauricioFabianoAzevedoFilho.pdf">link para arquivo pdf</a></li>
+        <li><a href="/02 - CSS/Seletores Avançados/exemplo2.html">link interno</a></li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Operações com dois números</title>
+</head>
+<body>
+    <h1>Operações com dois números</h1>
+    <input type="number" id="num1" placeholder="Digite o primeiro número">
+    <input type="number" id="num2" placeholder="Digite o segundo número">
+    <button onclick="calcularOperacoes()">Calcular</button>
+    <div id="resultado"></div>
+
+    <script>
+        function calcularOperacoes() {
+            const num1 = parseFloat(document.getElementById('num1').value);
+            const num2 = parseFloat(document.getElementById('num2').value);
+            
+            if (isNaN(num1) || isNaN(num2)) {
+                alert("Por favor, digite números válidos!");
+                return;
+            }
+            
+            const soma = num1 + num2;
+            const subtracao = num1 - num2;
+            const multiplicacao = num1 * num2;
+            const divisao = num1 / num2;
+            const resto = num1 % num2;
+            
+            document.getElementById('resultado').innerHTML = `
+                <p>Soma: ${soma}</p>
+                <p>Subtração: ${subtracao}</p>
+                <p>Multiplicação: ${multiplicacao}</p>
+                <p>Divisão: ${divisao}</p>
+                <p>Resto da divisão: ${resto}</p>
+            `;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Maior valor de uma lista</title>
+</head>
+<body>
+    <h1>Maior valor de uma lista</h1>
+    <button onclick="encontrarMaior()">Encontrar maior número</button>
+    <div id="resultado"></div>
+
+    <script>
+        function encontrarMaior() {
+            const numeros = Array.from({length: 10}, () => Math.floor(Math.random() * 100) + 1);
+            
+            let maior = numeros[0];
+            for (let i = 1; i < numeros.length; i++) {
+                if (numeros[i] > maior) {
+                    maior = numeros[i];
+                }
+            }
+            
+            document.getElementById('resultado').innerHTML = `
+                <p>Lista: [${numeros.join(', ')}]</p>
+                <p>Maior número: ${maior}</p>
+            `;
+        }
+    </script>
+</body>
+</html>

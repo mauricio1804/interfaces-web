@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inversor de palavra</title>
+</head>
+<body>
+    <h1>Inversor de palavra</h1>
+    <input type="text" id="texto" placeholder="Digite uma palavra ou frase">
+    <button onclick="inverterTexto()">Inverter</button>
+    <div id="resultado"></div>
+
+    <script>
+        function inverterTexto() {
+            const texto = document.getElementById('texto').value;
+            
+            if (!texto.trim()) {
+                alert("Por favor, digite algo!");
+                return;
+            }
+            
+            const textoInvertido = texto.split('').reverse().join('');
+            document.getElementById('resultado').innerHTML = `
+                <p>Original: ${texto}</p>
+                <p>Invertido: ${textoInvertido}</p>
+            `;
+        }
+    </script>
+</body>
+</html>
